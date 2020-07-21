@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="cart.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> To Cart SHoppinG </title>
+	</head>
+<body>
+	<div class="sell-cont" style="display: none;">
+		<div class="times-cont">
+			<span class="times" onclick="Shop.showItem('sell-cont','class', 'none');"> &times; </span>
+		</div>
+		<div align="center" class="sell-items-cont">
+			<!-- <div class="sell-cont-items-head">
+				sell
+			</div> -->
+			<!-- <div class="sell-cont-items-cont-body">
+				<div id="err">
+				
+				</div>
+				<form action="javascript:void(0);" onsubmit="Shop.sell(this);">
+					<table width="100%" cellpadding="0" cellpadding="0">
+						<tr>
+							<td width="10%">
+								<label for="flower-name">
+									Flower Name
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="90%" align="right">
+								<input type="text" name="flower-name" placeholder="Flower Name" style="" id='flower-name'>
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<label for="Description">
+									Description
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="90%" align="right">
+								<input type="text" name="Description" placeholder="Description" style="" id='Description'>
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<label for="image-url">
+									Image Url
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="90%" align="right">
+								<input type="url" name="image-url" placeholder="Image Url" style="" id='image-url'>
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<label for="flower-price">
+									Flower Price
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="90%" align="right">
+								<input type="number" name="flower-price" placeholder="Flower Price" style="" id='flower-price' min="1">
+							</td>
+						</tr>
+						<tr>
+							<td width="80%" align="center">
+								<input type="submit" name="submit" placeholder="submit">
+							</td>
+						</tr>
+					</table>
+				</form>
+				<br>
+				<br>
+			</div> -->
+		</div>
+	</div>
+	<div class="show-cart" style="display: none;">
+		<div class="times-cont">
+			<span class="times" onclick="Shop.showItem('show-cart','class', 'none');"> &times; </span>
+		</div>
+		<div align="center" class="show-cart-items-cont">
+			<div class="show-cart-items-cont-head">
+				Cart
+			</div>
+			<div class="show-cart-items-cont-body">
+			</div>
+		</div>
+	</div>
+	<header style="display:; position: fixed; top: 0;z-index: 1000;" id="nav">
+		<div class="header-cont">
+			<table width="100%" cellpadding="0" cellspacing="0" style="height: 0;">
+				<tr>
+					<td>
+						<div class="logocont"><span id="logo">MyCart </span> </div>
+					</td>
+					<td width="95%" align="left">
+						<div class="nav-menu-cont" align="left">
+							<!-- <div class="nav-item"> Item  </div>
+							<div class="nav-item"> Item  </div>
+							<div class="nav-item" onclick="Shop.sellCont();"> Sell  </div> -->
+							<div class="nav-item" onclick="Shop.showCart();">
+								<div style="display: inline-block; padding: 6px;position: relative;">
+									<img src="icons/shopping-cart.svg" width="30px">
+									<span class="notif" id="notif"> 0 </span>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+	<div id="nav-after"></div> 
+
+	<section>
+		<div id="cart-container" align="center">
+		</div>
+	</section>
+	<!-- <div style="background-image: url("${el['imgsrc']}); ">jjj </div> -->
+	<script src="cart.js">
+	</script>
+	<!-- <script src="scroll.js"> </script> -->
+	<!-- #B52828 red-->
+	<!-- #D85353 red-->
+	<!-- #F1EDED -->
+	<br>
+	<footer>
+		<div class="footer" style="padding: 10px 20px;" align="center">
+			<span style='font-size: 15px !important' class="foot-text"> MyCart &copy; 2018 </span>
+			<br>
+			<span> <img src="icons/like.svg" width="30px" height=10px" style="display: relative"></span> <br>
+			
+			<span style="font-size: 10px; font-weight: bold;text-shadow: 2px 2px rgba(0,0,0,0.82);"> C2GEN DESIGNS </span>
+		</div>
+	</footer>
+</body>
+</html>
